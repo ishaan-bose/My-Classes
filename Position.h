@@ -9,4 +9,3 @@ class Position
 
 	//yes, that's it. Just four variables variables
 };
-
