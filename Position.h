@@ -1,6 +1,7 @@
 #pragma once
 class Position
 {
+	//variable name explains the purpose of the variable
 	int world_x;
 	int world_y;
 
