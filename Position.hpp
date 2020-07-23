@@ -1,14 +1,14 @@
 #pragma once
 
+#include <iostream>
+
 class Position
 {
 	//variable name explains the purpose of the variable
 
-	//world position, it stores the position of it regardless if it is on the screen or not
 	int world_x = 0;
 	int world_y = 0;
-	
-	//screen position, the position of it on the computer screen
+
 	int screenx = 0;
 	int screeny = 0;
 
@@ -27,7 +27,25 @@ public:
 	//it doesn't move it by displaying it moving, it doesn't print 
 	//the object to the console
 	void Move(int x, int y);
-	
+
 	//this function just checks if the object is within boundaries
-	void checkBoundaries();	
+	bool checkBoundaries();
+
+	//returns a position left , right , up ,or down of this position
+	Position left();
+	Position right();
+	Position up();
+	Position down();
+
+	//constructor to initialize Position
+	Position(int x, int y);
+
+	//default Position Constructor
+	Position() {};
+
+	//overloaded equality check operator
+	bool operator==(const Position& rhs);
+
+	//this function is for debugging purposes only
+	friend std::ostream& operator<<(std::ostream& os, Position& obj);
 };
