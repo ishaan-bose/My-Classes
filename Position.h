@@ -25,4 +25,7 @@ public:
 	//it doesn't move it by displaying it moving, it doesn't print 
 	//the object to the console
 	void Move(int x, int y);
+	
+	//this function just checks if the object is within boundaries
+	void checkBoundaries();	
 };
