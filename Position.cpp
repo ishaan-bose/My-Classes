@@ -1,4 +1,4 @@
-#include "Position.h"
+#include "Position.hpp"
 
 void Position::Move(int x, int y)
 {
