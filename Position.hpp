@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-class int_Position
+class Position
 {
 	//variable name explains the purpose of the variable
 
