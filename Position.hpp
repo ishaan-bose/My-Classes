@@ -9,11 +9,6 @@ class Position
 	int world_x = 0;
 	int world_y = 0;
 
-	int screenx = 0;
-	int screeny = 0;
-
-	//yes, that's it. Just four variables variables
-
 	int screen_width = 40;
 	int screen_height = 20;
 
