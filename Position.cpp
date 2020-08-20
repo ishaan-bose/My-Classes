@@ -40,12 +40,7 @@ Position Position::up()
 {
 	Position a;
 	a.world_x = world_x;
-	a.world_y = world_y - 1;
-	/*I am subtracting 1 because the coordinates for
-	the function SetCursorPosition is flipped on the y axis,
-	meaning it counts from up to down rather than down to up.
-	Unless I am Wrong,Then pls do tell me
-	*/
+	a.world_y = world_y + 1;
 
 	return a;
 }
@@ -54,12 +49,7 @@ Position Position::down()
 {
 	Position a;
 	a.world_x = world_x;
-	a.world_y = world_y + 1;
-	/*I am adding 1 because the coordinates for
-	the function SetCursorPosition is flipped on the y axis,
-	meaning it counts from up to down rather than down to up.
-	Unless I am Wrong,Then pls do tell me
-	*/
+	a.world_y = world_y - 1;
 
 	return a;
 }
