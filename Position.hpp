@@ -41,7 +41,7 @@ public:
 	Position(int x, int y);
 
 	//default Position Constructor
-	Position() {};
+	Position() = default;
 
 	//overloaded equality check operator
 	bool operator==(const Position& rhs);
